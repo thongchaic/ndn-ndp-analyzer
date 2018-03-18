@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo $# $0 $1
-
+ 
 if [ $# -eq 1 ]
 then
 NFD=nfd-$1
@@ -20,7 +20,7 @@ rm -f $OUTFILE
       for lt in $(cat res/$NFD/$i/ndnperf-Consumer$c | grep RES | awk '{print $8}')
       do
         NFDL="$NFDL $lt";
-      done 
+      done    
 
       NDPL="";
       for lt in $(cat res/$NDP/$i/ndnperf-Consumer$c | grep RES | awk '{print $8}')

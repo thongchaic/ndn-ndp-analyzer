@@ -1,14 +1,13 @@
 #!/bin/bash
 
 
-
 gnuplot -e <<EOM "
 set terminal png enhanced font 'Times,16'; 
 set key right ;
 set yrange [1:30];
 set xlabel 'Consumer';
 set xtics 1;
-set ylabel 'Runs';
+set ylabel 'Payload Size';
 set zlabel 'Throughput (Kbps)' rotate by 90;
 set output 'plot/3dthroughput-9000.png'; 
 set xtics font 'Times,16';
@@ -25,7 +24,7 @@ set key right ;
 set yrange [1:30];
 set xlabel 'Consumer';
 set xtics 1;
-set ylabel 'Runs';
+set ylabel 'Payload Size';
 set zlabel 'Throughput (Kbps)' rotate by 90;
 set output 'plot/3dthroughput-1500.png'; 
 set xtics font 'Times,16';
@@ -42,7 +41,7 @@ set key right ;
 set yrange [1:30];
 set xlabel 'Consumer';
 set xtics 1;
-set ylabel 'Runs';
+set ylabel 'Payload Size';
 set zlabel 'Throughput (Kbps)' rotate by 90;
 set output 'plot/3dthroughput-diffise.png'; 
 set xtics font 'Times,16';

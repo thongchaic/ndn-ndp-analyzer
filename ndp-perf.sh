@@ -10,9 +10,9 @@ then
 	do
 
 	  	OUTPATH=$PTH/$UIN/$TT
-
 	  	rm -rf $OUTPATH
 	  	mkdir -p $OUTPATH
+
 	    for i in `echo "1 2 3 4 5"`
 	    do
 	      gnome-terminal -x $PTH/ndp-perf.sh Consumer$i $OUTPATH
@@ -23,6 +23,7 @@ then
 			echo -ne "." 
 			sleep 1
 		done
+		
 		echo 
 	    
 	    tail -f $OUTPATH/ndnperf-Consumer1 | while read LINE
